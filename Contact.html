@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Git Downtown Lounge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-info, .contact-form {
+      margin-bottom: 40px;
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #555;
+    }
+    .map {
+      text-align: center;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong> 123 Main Street, Downtown City, Country</p>
+      <p><strong>Phone:</strong> +63 (XXX) XXX-XXXX</p>
+      <p><strong>Email:</strong> info@gitdowntownlounge.com</p>
+      <p><strong>Opening Hours:</strong> Thu-Sat 9 PM – 1:30 AM | Other days by reservation</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:info@gitdowntownlounge.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="Subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <h2>Find Us Here</h2>
+      <!-- Replace the `src` with your actual Google Maps embed URL -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18…" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</body>
+</html>
+
